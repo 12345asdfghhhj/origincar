@@ -1,0 +1,40 @@
+{
+  "name": "origin-car-medical-competition",
+  "version": "1.0.0",
+  "description": "第二十届全国大学生智能汽车竞赛-地瓜机器人智慧医疗挑战赛参赛方案",
+  "main": "src/task_manager/launch/competition.launch.py",
+  "author": "[填写队伍名称]",
+  "organization": "[填写学校名称]",
+  "license": "Apache-2.0",
+  "platforms": ["RDK X3", "RDK X5", "RDK S100"],
+  "categories": ["比赛专区", "综合应用", "人机交互", "环境感知"],
+  "keywords": ["智慧医疗", "OriginCar", "智能车", "竞赛", "大模型", "YOLO", "二维码", "导航", "避障"],
+  "dependencies": {
+    "rclpy": "*",
+    "ultralytics": ">=8.0.0",
+    "opencv-python": ">=4.8.0",
+    "pyzbar": ">=0.1.9",
+    "requests": ">=2.30.0",
+    "numpy": ">=1.24.0"
+  },
+  "hardware": {
+    "robot": "OriginCar / OriginCar Pro",
+    "sensors": ["单目摄像头", "深度摄像头", "单线激光雷达", "IMU", "里程计"],
+    "controller": "RDK X5",
+    "actuators": ["电机", "转向舵机"]
+  },
+  "competition": {
+    "name": "第二十届全国大学生智能汽车竞赛",
+    "category": "智慧医疗挑战赛",
+    "year": "2025"
+  },
+  "features": [
+    "二维码任务识别",
+    "YOLOv8人形检测",
+    "大模型图生文描述",
+    "路径规划与导航",
+    "激光雷达避障",
+    "语音播报",
+    "任务流程管理"
+  ]
+}
